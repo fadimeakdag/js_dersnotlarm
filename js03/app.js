@@ -84,4 +84,4 @@ const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
 
 console.log(`There are at least 2 numbers having same first digit: ${result}`);
 
-nhh
+
