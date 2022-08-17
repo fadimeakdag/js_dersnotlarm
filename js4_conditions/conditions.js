@@ -202,3 +202,35 @@ console.log("****** CONDITIONS *******");
 // let fark = gelir - gider
 // let kredi = fark >= asgarı ? "kredi alabilir" : "kredi alamaz";
 // console.log(kredi);
+
+
+// ?/Soru-1: Girilen not değerine karşılık gelen harfli notu bildiren programı yazınız.
+//? • 0-25 arası not karşılığı FF olmalı,26-45 arası DD, 46-65 arası CC, 66- 75 arası BB, 76-
+//? 90 arası BA, 91-100 arası AA olarak çevrilmelidir.
+//? • 100’den büyük veya 0‘dan küçük değerlerde hata mesajı verecektir
+
+// let notum = Number(prompt("Notunuzu giriniz :"))
+// if ( notum >=0  &&  notum<=25) {
+//     console.log("Notunuzun karşılığı FF");
+// }
+// else if (notum>=26 && notum<=45) {
+//     console.log("Notunuzun Karşılığı DD");
+// }
+// else if (notum>=46 && notum<=65) {
+//     console.log("notunuzun karşılığı CC");
+// }
+// else if (notum>=66 && notum<=75) {
+//     console.log("notunuzun karşılığı BB");
+// }
+// else if (notum>=76 && notum<=90) {
+//     console.log("notunuzun karşılığı BA");
+// }
+// else if (notum>=91 && notum<=100) {
+//     console.log("notunuzun karşılığı AA");
+// }
+// else{
+//     console.log("geçersiz değer girdiniz");
+// }
+
+//? Soru-2: Girilen ay ismine karşılık gelen sıra numarası veren programı switch-case yapısı
+//? kullanarak yazınız
