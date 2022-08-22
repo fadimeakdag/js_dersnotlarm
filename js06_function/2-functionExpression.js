@@ -14,7 +14,7 @@ console.log("******** 2- EXPRESSION*******");
 //   return sayi % 2 ? `${sayi} TEKTIR` : `${sayi} CIFTTIR`;
 // }
 
-//! Cannot access 'tekCift1' before initialization  at
+//! Cannot access 'tekCift1' before initialization  at //önden tanımlamada bu şekilde hata alırız
 // console.log(tekCift1(9));
 
 //! Funct Expression yontemi ile tanimlama
@@ -27,7 +27,7 @@ console.log(tekCift1(5));
 //* ORNEK: 3 sayinin en büyüğünü bulan fonks.
 //******************************************************/
 
-const buyukBul = function (n1, n2, n3 = -Number.MAX_VALUE) {
+const buyukBul = function (n1, n2, n3 = -Number.MAX_VALUE) {// 3. değer girilmezse eşitliyoruz - değer girme ihtimaline karşı -number .max_value ye eşitliyoruz.buda en büyük negatif sayı demek number ın gösterebileceği en büyük sayının negatifi demek
   let enBuyuk;
   if (n1 >= n2 && n1 >= n3) {
     enBuyuk = n1;
@@ -52,7 +52,7 @@ console.log("Girilen sayilarin en buyugu:", buyukBul(9, 10));
 
 //* ORNEK: Bir fonksiyon içerisinde başka fonksiyonlar çağrılabilir
 //**************************************************/
-const topla = function (s1, s2) {
+const topla = function (s1, s2) { // burası sonrada tanımlansa olur expressıonb mantığına ters normalde invok işlemi hesaplada en sonda olduğu için hatq vermiyor
   return s1 + s2;
 };
 
@@ -65,9 +65,9 @@ const bol = function (s1, s2) {
 const carp = function (s1, s2) {
   return s1 * s2;
 };
-
+//*fonsiyon içinde başka fonksiyonlar çağırdık
 const hesapla = function (s1, s2, islem) {
-  let sonuc = 0;
+  let sonuc = 0;// çıktıyı sonuç seklinde almak için sonuç değişkeni atıyoruz sonuc burada olsun işleme ne girerse güncelliyor// 
   switch (islem) {
     case "+":
       sonuc = topla(s1, s2);
@@ -85,8 +85,23 @@ const hesapla = function (s1, s2, islem) {
       break;
   }
   console.log("SONUC:", sonuc);
-  return sonuc;
+  return sonuc; // ana proğrama gelsin diye
 };
+  //*böylede olabilir yeri
+//   const topla = function (s1, s2) {
+//   return s1 + s2;
+// };
 
-hesapla(3, 5, "+");
+// const cikar = function (s1, s2) {
+//   return s1 - s2;
+// };
+// const bol = function (s1, s2) {
+//   return s1 / s2;
+// };
+// const carp = function (s1, s2) {
+//   return s1 * s2;
+// };
+
+
+hesapla(3, 5, "+"); // return olmadan ki hali
 console.log(hesapla(4, 3, "/"));
