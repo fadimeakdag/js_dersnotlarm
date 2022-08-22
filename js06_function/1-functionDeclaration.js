@@ -10,7 +10,7 @@ console.log("**** FUNC DECLARATION ******");
 
 //* ORNEK:
 //************************************************/
-yazdir();
+yazdir();// tanımlamadan öncede çağrılabiliyor function declaratıon yönteminde
 
 //! Fonksiyonun tanimlanmasi (declaration)
 function yazdir() {
