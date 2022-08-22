@@ -33,26 +33,32 @@ console.log("****** WHILE *******");
 //* console.log("Girilen not: ", not)
 
 
-console.log("*******DO-WHİLE*******")
-//?10 kere konsolda merhaba yazdıran uygulama do while dongüsüs ile yapın
-let sayac =1;
-do {
-    console.log("merhaba -", sayac);
-    sayac++;
-} while (sayac <= 10);
-//? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
-//? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
-//? not girmeye zorlayan kodu while dongusu ile yaziniz.
+// console.log("*******DO-WHİLE*******")
+// //?10 kere konsolda merhaba yazdıran uygulama do while dongüsüs ile yapın
+// let sayac =1;
+// do {
+//     console.log("merhaba -", sayac);
+//     sayac++;
+// } while (sayac <= 10);
+// //? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
+// //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
+// //? not girmeye zorlayan kodu while dongusu ile yaziniz.
 
- let not1; // not u tanımladık
- do{
-   not1 = +prompt("Lütfen 0-100 arasıda not giriniz."); if (not1 < 0 || not1 > 100){
-    console.log("not 0-100 arası olmalıdır.")
-   }
- }while (not1 < 0 || not1 > 100);
- console.log("Girilen not: ", not1)
+//  let not1; // not u tanımladık
+//  do{
+//    not1 = +prompt("Lütfen 0-100 arasıda not giriniz."); if (not1 < 0 || not1 > 100){
+//     console.log("not 0-100 arası olmalıdır.")
+//    }
+//  }while (not1 < 0 || not1 > 100);
+//  console.log("Girilen not: ", not1)
 
-
+//?ÖDEV: Tahmin Oyunu
+//?• Program 0-100 arasında rasgele bir sayı tutmalı ve kullanıcının bu sayıyı 5 
+//?kerede (hak) bilmesini istemelidir.
+//?• Her yanlışta hakkını bir düşürmeli ve ARTTIR/AZALT diyerek kullanıcıyı 
+//?yönlendirmelidir. 
+//?• Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi 
+//?ise "Tebrikler ... denemede bildiniz" diye bir bilgi mesajı yazdırmalıdır
 
 
 // let pc= Math.trunc(Math.random()*100);
@@ -74,3 +80,5 @@ do {
 //             }
 //         }
 // }
+
+
