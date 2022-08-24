@@ -6,7 +6,7 @@ console.log("******* 3 - SCOPE ********");
 let sayi1 = 5; //! Global Scope
 console.log(sayi1); //! 5
 
-const fonks1 = function () {
+const fonks1 = function () {// functıon scope
   sayi1 = 22;
   console.log(sayi1); //! 22
 };
@@ -31,7 +31,7 @@ if (sayi2 === 8) {
   let sonuc = "Merhaba";
 } else {
   sonuc = "Nasilsin"; //! Hoisting oluyor, yani degisken global hale geliyor.
-  // console.log(sonuc);
+  // console.log(sonuc);// burası kapalı olursa sonuç değişken hoisting hale geliyor bu yüzden aşağıdaki clg çıktı veriyor  .. sonuç değişkeni tanımlanmamış elsede otomatik varmış gibi yapıyor bu vara kaçıyor modern js de kullanmasak iyi
 }
 
-console.log(sonuc);
+console.log(sonuc);// blok scope olduğu için if else çalışmıyor
