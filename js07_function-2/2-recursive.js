@@ -21,7 +21,7 @@ const fibo = (n) => {
   } else if (n === 1 || n === 2) {
     return 1;
   } else {
-    return fibo(n - 1) + fibo(n - 2);
+    return fibo(n - 1) + fibo(n - 2);// recursıon (mat formulu)   burada döndüreceği direk değer değil hesaplayacaği değer
   }
 };
 
