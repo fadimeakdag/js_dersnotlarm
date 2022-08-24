@@ -10,6 +10,8 @@
 
 // //* ORNEK: Silindir Hacmi
 // //************************************************/
+//?SORU: Bir dairenin alanını hesaplayan fonksiyonu arrow fonksiyon olarak
+//?yazınız. Yarıçap prompt ile girilmeli ve sonuç ana programda yazdırılmalıdır.
 
 // const r = Number(prompt("yaricap giriniz:"));
 // const h = Number(prompt("yukseklik giriniz:"));
@@ -21,6 +23,8 @@
 
 // //* ORNEK: Yas hesapla
 // //************************************************/
+//?SORU: Doğum tarihini parametre olarak alan ve ana programa yaşı
+//?hesaplayıp döndüren fonksiyonu yazınız
 
 // const tarih = Number(prompt("Dogum Tarihini giriniz:"));
 
