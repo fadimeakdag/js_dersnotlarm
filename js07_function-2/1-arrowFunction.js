@@ -16,10 +16,10 @@
 // const r = Number(prompt("yaricap giriniz:"));
 // const h = Number(prompt("yukseklik giriniz:"));
 
-// const hacimHesapla = (r, h) => Math.PI * r * r * h;
+// const hacimHesapla = (r, h) => Math.PI * r * r * h;//*pi çarpı r kare *h math.pı yi açğırdık
 
 // // console.log(`${r} , ${h} => Hacmi: ${hacimHesapla(r, h).toExponential()}`);
-// console.log(`${r} , ${h} => Hacmi: ${hacimHesapla(r, h).toFixed(2)}`);
+// console.log(`${r} , ${h} => Hacmi: ${hacimHesapla(r, h).toFixed(2)}`);//*tofixed virgül sonrası 2 basama alıyor
 
 // //* ORNEK: Yas hesapla
 // //************************************************/
@@ -30,7 +30,7 @@
 
 // //! Arrow Func yontemi ile tanimlama
 // const yasHesapla = (tarih) => {
-//   const yas = new Date().getFullYear() - tarih;
+//   const yas = new Date().getFullYear() - tarih;//*güncel tarihi alıyor
 //   return yas;
 // };
 
