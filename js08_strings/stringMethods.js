@@ -4,9 +4,14 @@
 // ?======================================================
 
 console.log("*** STRING METHODS ***");
+//*js de veri yapıları ikiye ayrılıyoır primitive non primitive str .hem primitive hem non primitive alır 
+//!primitive sadece bir değer tutar . 5 değeri atarsınız sadece 5 degeri olur ve basit veri yapılarıdır ama obje o şekıilde değil ona değer atarsın değiştirirsin kullanılan . objenin fonksiyonudır . obje komplex veri yapısı içinde fonnks vs vs seyler tutar.
+
+//date bir obje new le yazılanlar obje bunlar js kodunu kolaylaştırır . ile eriştiğimiz her sey objedir
 
 //!1- Klasik yöntem (String Literals) ile string tanimlanirsa bu string
-//! bir primitive degiskendir.
+//! bir primitive degiskendir.null boolean number string symbolun  
+// primitive tek bir değer tutar
 let str1 = "Clarusway";
 //Char => C, l, a,....
 const str2 = " Hello";
@@ -14,7 +19,8 @@ const str3 = " Full Stack";
 
 console.log(str1, typeof str1);
 
-//!2 - Non-primitive String tanımlama
+//!2 - Non-primitive String tanımlama (obje )
+// nokta ile gelenler
 const str4 = new String("Non-Primitive");
 console.log(typeof str4);
 
