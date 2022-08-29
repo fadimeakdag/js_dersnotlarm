@@ -133,10 +133,11 @@ console.log(word.lastIndexOf("be")); //? 16 son be yi
 console.log(word.lastIndexOf("BE")); //? -1 bulamamış negatif sayı döndürdü be var BE  yok
 console.log(str4); // her bir harfin indisini
 //* ----------------------------------------------------------
-//* search()
-//* ----------------------------------------------------------
+//* search() indexof la benziyor indexof da sadece str arayabilirsin .
+//*regular expression / / bunlar arasında ^ no değidir /[^\w\s]/g   
+//* ---wayt space a dab z ye 0 dan 9 a her türlü karaktere denir harf mi rakam mı \w ile bakarsın boşluklara s ile bakarsın  g global demek yani tamamında ara demek bir sürü harf var istediğin zaman kullanabilirsin bune regex denir search buna izin veriyor-------------------------------------------------------
 
-const buyukHarf = /[A-Z]/;
+const buyukHarf = /[A-Z]/; // a dan z ye büyük harfleri bul ilk bulduğu büyük harfi dödürür
 const nokta = /[.]/;
 const virgul = /[,]/;
 console.log(word.search(buyukHarf)); //? ilk buyuk harfin indeksi 0
@@ -152,10 +153,10 @@ console.log(word2.startsWith("Sen")); //? true
 console.log(word2.startsWith("gulunce")); //? false
 console.log(word2.startsWith("gulunce", 4)); //? true
 console.log(word2.endsWith("!")); //? true
-console.log(word2.endsWith("acar", 23)); //? true
+console.log(word2.endsWith("acar", 23)); //? true 23 e kadar acar veriyor mu diye soruyoruz 22 olsa false verir çünkü aca oluyor
 
 //* ----------------------------------------------------------
-//*  replace(searchFor, replaceWith) --immutable
+//*  replace(searchFor, replaceWith) --immutable değiştirmek için atama yapabilirsin esayning // değiştirme bir aradığın ikincisi değiştiermek istediğn 
 //* ----------------------------------------------------------
 let oku = "Oku Baban gibi, saf olma, saf olma";
 // console.log(oku.replace("saf olma", "basarili ol"));
@@ -163,13 +164,13 @@ oku = oku.replace("saf olma", "basarili ol");
 // oku = oku.replace(/saf olma/gi, "basarili ol");
 console.log(oku);
 
-oku = oku.replace(/BASARILI/gi, "Zengin");
+oku = oku.replace(/BASARILI/gi, "Zengin");// regex yaptık büyük harfle aradık yazdı gi yaptık çünkü global demek g tamamını değiştir inkeysitiv olarak değiştir demek
 console.log(oku);
 
 //! NOT: replace metodu eger Regex ile aksi belirtilmiyorsa (g) sadece ilk buldugunu degistirir.
 
 //* ----------------------------------------------------------
-//*  replaceAll() --immutable
+//*  replaceAll() --immutable  // regexsiz 
 //* ----------------------------------------------------------
 let degistir = "daglar daglar yol ver gecem..";
 degistir = degistir.replaceAll("daglar", "Dağlar");
@@ -182,7 +183,7 @@ let degistir2 =
   " Little darling, don't shed no tears" +
   " No woman, no cry, eh";
 
-console.log(degistir2.replaceAll(/no/gi, "Hayir"));
+console.log(degistir2.replaceAll(/no/gi, "Hayir"));// no olan yerleri hayıra çevir demek
 
 //* ----------------------------------------------------------
 //*  slice(beginIndex[, endIndex])
@@ -191,14 +192,14 @@ console.log(degistir2.replaceAll(/no/gi, "Hayir"));
 //* ----------------------------------------------------------
 const veysel = "Uzun ince bir yoldayim yuruyorum gunduz gece..";
 
-const sliced = veysel.slice(33);
+const sliced = veysel.slice(33);// dılımlıyor bölüyor 33 den itibaren yeni bir karakter grubu oluşturuyor 33 den başlıyor sonuna kadar devam ediyor
 console.log(sliced, typeof sliced); //? gunduz gece..
 
-console.log(veysel.slice(17, 30)); //? dayim yuruyor.
+console.log(veysel.slice(17, 30)); //? dayim yuruyor.// 17 den 30 a kadar 30 dahil değil  bu methoda sadece 
 console.log(veysel.slice(-10)); //? duz gece..
-console.log(veysel.slice(-23, -19)); //? yuru
+console.log(veysel.slice(-23, -19)); //? yuru eksi indeks kullanılabiliyor ama dizelerdeki gibi değil bu fonksiyon eksi indeksi kabul ediyor
 
-console.log(veysel.substring(17, 30)); //? dayim yuruyor
+console.log(veysel.substring(17, 30)); //? dayim yuruyor slice ile aynı sadece negatif sayıyı kullsnmıyor slice den eski bir yöntem
 //! negatif indeks substring ile kullanilamaz.
 console.log(veysel.substring(-10)); //? Uzun ince bir yoldayim yuruyorum gunduz gece..
 
@@ -206,11 +207,11 @@ console.log(veysel.substring(-10)); //? Uzun ince bir yoldayim yuruyorum gunduz 
 //* split([sep [, limit] ])
 //* ----------------------------------------------------------
 const tarkan = "Gel gunduzle gece olalim";
-const splited = tarkan.split(" ");
+const splited = tarkan.split(" ");//boşluga göre bölüp array e çevirdi
 console.log(splited, typeof splited); //! Bosluklara göre ayirarak Array'e cevirdi.
 
 const chars = tarkan.split("");
-console.log(chars); //* null karakterine göre harfleri ayırarark bir char dizisi oluşturdu.
+console.log(chars); //* null karakterine göre harfleri ayırarark bir char dizisi oluşturdu. karakter dizizsi her bir karakteri tırnak içine alır
 
 //* ----------------------------------------------------------
 //* trim();
@@ -223,6 +224,7 @@ console.log(ramazan.trim().length); //27
 
 //! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
 //! bir fonksiyon yaziniz.
+tarkan.length()
 
 //! ODEV2:
 //! ----------------------------------------------------------
