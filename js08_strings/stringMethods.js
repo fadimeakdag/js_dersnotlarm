@@ -11,7 +11,7 @@ console.log("*** STRING METHODS ***");
 
 //!1- Klasik yöntem (String Literals) ile string tanimlanirsa bu string
 //! bir primitive degiskendir.null boolean number string symbolun  
-// primitive tek bir değer tutar
+// primitive tek bir değer tutar az yer kaplar bellekte
 let str1 = "Clarusway";
 //Char => C, l, a,....
 const str2 = " Hello";
@@ -21,7 +21,8 @@ console.log(str1, typeof str1);
 
 //!2 - Non-primitive String tanımlama (obje )
 // nokta ile gelenler
-const str4 = new String("Non-Primitive");
+const str4 = new String("Non-Primitive");// new keywordu (operatörü ile)ile string objesinden (konstraktır(kurucu yapuıcı fonksiyon) yeni instınt üretti . çıktısı type of u obje 
+//düz objeyi nan primitive cevirmek objetc komplex veri yapıları içlerinde bir sürü fonksiyon saklıyor. bir sürü method kullanabiliriz obje ile 
 console.log(typeof str4);
 
 //?----------------------------------------
