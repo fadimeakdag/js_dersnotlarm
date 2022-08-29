@@ -75,7 +75,7 @@ console.log(yourName);
 // };
 
 const esitMi = (str1, str2) =>
-  str1.toLocaleUpperCase() === str2.toLocaleUpperCase()
+  str1.toLocaleUpperCase() === str2.toLocaleUpperCase() // tek bir statment
     ? `${str1} ile ${str2} Esittir`
     : `${str1} ile ${str2} Esit degildir`;
 
@@ -87,37 +87,37 @@ console.log(esitMi("Hello", "Hell"));
 //* ----------------------------------------------------------
 const a = "réservé"; // with accents, lowercase
 const b = "RESERVE"; // no accents, uppercase
-console.log(a.localeCompare(b, "en", { sensitivity: "base" }));
+console.log(a.localeCompare(b, "en", { sensitivity: "base" }));//başka dillerde karşılaştırma ilki dil en olan base olan aşağidakı karsılastırma şekli
 
-//? 'BASE: a ≠ b, a = á, a = A'
-//? 'ACCENT: a ≠ b, a ≠ á, a = A'
-//? 'CASE: a ≠ b, a = á, a ≠ A'
+//? 'BASE: a ≠ b, a = á, a = A'//aksan ve büyük küçük harf duyarsız
+//? 'ACCENT: a ≠ b, a ≠ á, a = A'//aksanların eşit olmalı
+//? 'CASE: a ≠ b, a = á, a ≠ A'// küçük büyük harf duyarlılığı
 
 //* ----------------------------------------------------------
-//* charAt()
+//* charAt() belittiğiniz indisdeki karakteri göterir
 //* ----------------------------------------------------------
 const str6 = "Full Stack Path and DS path";
 console.log(str6.charAt(5)); //* S
 console.log(str6.charAt(4)); //* " "
-console.log(str6.charAt()); //* F (ilk indistekini dondurur)
-console.log(str6.charAt(14)); //* h
+console.log(str6.charAt()); //* F (ilk indistekini dondurur) bi şey belirtmese ilk krakteri döndürür
+console.log(str6.charAt(14)); //* h  - çalışmadı son karakteri bulmak için length i kullanmamız lazım
 
 //! lenght bir property (objenin degiskenidir) dir ve string'in
 //! karakter sayisini tutar.
-console.log(str6.length); //* 27
+console.log(str6.length); //* 27 
 
 //* String son harfini ogrenmek istersek
-console.log(str6.charAt(str6.length - 1)); //* 0 -26 => 27 eleman
+console.log(str6.charAt(str6.length - 1)); //* 0 -26 => 27 eleman 27 elemanlı str6 dan -1 çıkarsak son karakteri buluruz h 0 dan başladığı için 26 karakter son karakterdir
 
 //* ----------------------------------------------------------
-//* includes() - case sentive
+//* includes() - case sentive büyük küçük harf duyarlı str içinde sorduğun karakter varmı yokmu diye sorarsın
 //* ----------------------------------------------------------
 const word = "To be or not to be, that is the question";
 
 console.log(word.includes("to be")); //? true
 console.log(word.includes("That")); //? false
-console.log(word.includes("")); //? true
-console.log(word.includes("to be", 14)); //? false
+console.log(word.includes("")); //? true  yapısal bir durum true çıkmasının sebebi
+console.log(word.includes("to be", 14)); //? false 14 den sonta to be varmı diyoruz yok o be den başlıyor 14
 console.log(word.includes("to be", 13)); //? true
 
 //! NOT: case insentive kullanmak icin str baslangicta kucuk veya
@@ -126,12 +126,12 @@ console.log(word.includes("to be", 13)); //? true
 //* indexOf() , lastIndexOf() - case sensitive
 //* ----------------------------------------------------------
 
-const toBe = word.indexOf("or");
+const toBe = word.indexOf("or"); // or un başladığı indeks yani o 6 dan başlıyor
 console.log(toBe); //? 6
 console.log(word.indexOf("be")); //? 3
-console.log(word.lastIndexOf("be")); //? 16
-console.log(word.lastIndexOf("BE")); //? -1
-
+console.log(word.lastIndexOf("be")); //? 16 son be yi
+console.log(word.lastIndexOf("BE")); //? -1 bulamamış negatif sayı döndürdü be var BE  yok
+console.log(str4); // her bir harfin indisini
 //* ----------------------------------------------------------
 //* search()
 //* ----------------------------------------------------------
