@@ -132,7 +132,10 @@ console.log(word.indexOf("be")); //? 3
 console.log(word.lastIndexOf("be")); //? 16 son be yi
 console.log(word.lastIndexOf("BE")); //? -1 bulamamış negatif sayı döndürdü be var BE  yok
 console.log(str4); // her bir harfin indisini
-//* ----------------------------------------------------------
+//* 
+
+
+//---------------------------------------------------------
 //* search() indexof la benziyor indexof da sadece str arayabilirsin .
 //*regular expression / / bunlar arasında ^ no değidir /[^\w\s]/g   
 //* ---wayt space a dab z ye 0 dan 9 a her türlü karaktere denir harf mi rakam mı \w ile bakarsın boşluklara s ile bakarsın  g global demek yani tamamında ara demek bir sürü harf var istediğin zaman kullanabilirsin bune regex denir search buna izin veriyor-------------------------------------------------------
@@ -224,18 +227,33 @@ console.log(ramazan.trim().length); //27
 
 //! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
 //! bir fonksiyon yaziniz.
-tarkan.length()
+//birinci yöntem
+// console.log(`Şarkı ismi ${tarkan.indexOf(" ") + 1} kelimeden oluşmaktadır`);
+// ikinci yöntem
+const string = "Uzun ince bir yoldayım gidiyorum gündüz gece."
+const sentence = (str) => str.split(" ").length
+console.log(sentence(string))
+console.log(sentence(tarkan))
+// 3. yöntem
+console.log(tarkan.split(" ").length)
+
+
+
+
+
 
 //! ODEV2:
 //! ----------------------------------------------------------
 // https://www.youtube.com/watch?v=b7vfp5G4brE
 // https://youtu.be/b7vfp5G4brE
 
+let link = "https://www.youtube.com/watch?v=b7vfp5G4brE";
+const replacedLink = link.replace("be.com/watch?v=",".be/")
+console.log(replacedLink)
 
 
-let grup = ["başarılı bir grup"]
-let grubumuz = grup.split(" ")
-let grup2 = grubumuz.re
+
+
 
 
 
