@@ -72,7 +72,7 @@ console.log(yas55);
 //? kisiler icerisindeki yaslar dizisinde bulunan 44 yasini bir eksiltiniz.
 kisiler[5][1]--; //?43 5. indisin 1 .indisi bir attı
 console.log(kisiler);
-console.log(yaslar);
+console.log(yaslar);// sığ kopyalama derin kopyama var dizilerde sığ kopyalamada değişiklik gözükür buradaki gibi
 
 //? ===========================================================
 //?  DIZIYI DEGISTIREN (MUTATOR) METOTLAR
@@ -93,7 +93,7 @@ console.log(arabalar, n);
 const n1 = arabalar.unshift("Audi");
 console.log(arabalar, n1);
 
-//* dizinin 0. indeks elemanini siler ve silenen elemani dondurur
+//*shift dizinin 0. indeks elemanini siler ve silenen elemani dondurur
 const audi = arabalar.shift();
 console.log(arabalar, audi);
 
