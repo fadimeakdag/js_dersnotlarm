@@ -128,10 +128,10 @@ console.log(sayilar);
 
 //* fill()
 const array1 = [1, 2, 3, 4];
-array1.fill(0);
+array1.fill(0);// tüm elemanları 0 yap diyoruz
 console.log(array1);
 
-array1.fill(1, 2, 4);
+array1.fill(1, 2, 4);// 2. indisden 4. indise kadar olan elemanları 1 yap demek
 console.log(array1);
 array1.fill(-1, 1); //* 1. eleman ve sonrasini -1 yap
 console.log(array1);
