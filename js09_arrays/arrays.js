@@ -196,7 +196,7 @@ const combinedArr = yazilar.concat(// hangisisni eklemek istersen onu başa yaz�
 );
 console.log(combinedArr);
 
-//* every()
+//* every() hepsi
 //*-----------------------------------------------------------
 //? Tum diziyi itere (dolaşır) eder ve aldigi callback fonksiyonuna gore
 //? test gerceklestirir.Tum elemanlar icin test basarili ise
@@ -208,13 +208,13 @@ check
   ? console.log("Dizideki herkesin yasi 18'den buyuktur")// ve 18den büyükse bunu döndür diyoruz true ise yani değilse diğerini
   : console.log("Dizide 18 yas alti var");
 
-//* some()
+//* some()  bazısı
 //*-----------------------------------------------------------
 //? Aldigi callback fonksiyonuna gore test gerceklestirir.
 //? En az bir eleman icin bile test basarili ise true aksi
 //? takdirde false deger dondurur.
 
-const buyuk80 = yasArray.some((y) => y >= 80);
+const buyuk80 = yasArray.some((y) => y >= 80); // acaba 80 den büyük birisi var mı diye soruyoruz // some (y ) ile diğer y aynı değer olmalı yas yazdıysan yas veya baska bişi
 console.log(buyuk80); //? false
 
 //* find(), findLast()
@@ -224,8 +224,8 @@ console.log(buyuk80); //? false
 //? Eger hic bir eleman kosulu saglamazsa undefined dondurur.
 
 //?Ornek: Yasi 30 dan buyuk olan ilk elemani yazdirin
-const yasIlk30 = yasArray.find((yas) => yas >= 30);
-const yasSon30 = yasArray.findLast((yas) => yas >= 30);
+const yasIlk30 = yasArray.find((yas) => yas >= 30);//yaşı 30 dan büyük olan ilk elementi döndür dedim
+const yasSon30 = yasArray.findLast((yas) => yas >= 30);//bu koşolu sağlayan sonuncu elementi döndürür
 console.log(yasIlk30, yasSon30);
 
 //* findIndex()
@@ -237,4 +237,4 @@ console.log(yasIlk30, yasSon30);
 //?Ornek: Yasi 30 dan buyuk olan ilk elemanin indexini yazdirin
 
 const foundIndex = yasArray.findIndex((yas) => yas >= 30);
-console.log(foundIndex);
+console.log(foundIndex);// yaşi 30dan büyük olanların indisini yazar ilk 30 un
