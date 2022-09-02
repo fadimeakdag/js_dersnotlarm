@@ -178,34 +178,34 @@ console.log(sayilar1.toString());
 //* slice()
 //*-----------------------------------------------------------
 const arabalar1 = ["BMW", "Mercedes", "Fiat", "Anadol"];
-const yeniArabalar = arabalar1.slice(2);
+const yeniArabalar = arabalar1.slice(2);//2. indisten itibaren döndürür 
 console.log(yeniArabalar, arabalar1);
 
-const yeniArabalar1 = arabalar1.slice(1, 3);
+const yeniArabalar1 = arabalar1.slice(1, 3);// 1 den 3 e kadar al 3 dahil değil başalngiç bitiş verebiliyoruz
 console.log(yeniArabalar1);
 
 //* concat()
 //*-----------------------------------------------------------
 const yazilar = ["Bugun", "hava", "cok", "guzel"];
 const numbersArr = [1, 2, 5, 7];
-const combinedArr = yazilar.concat(
+const combinedArr = yazilar.concat(// hangisisni eklemek istersen onu başa yazıp birleştirebilirsin
   true,
   numbersArr,
-  ["aslinda", "cok", "sicak"],
-  [["x", "y"]]
+  ["aslinda", "cok", "sicak"],// birden fazla ekleme yapabilir hatta aynı anda dizi oluşturabilirsin 
+  [["x", "y"]]// array içinde array ekleme yapılabilir değer eklenebilir true  deki gibi
 );
 console.log(combinedArr);
 
 //* every()
 //*-----------------------------------------------------------
-//? Tum diziyi itere eder ve aldigi callback fonksiyonuna gore
+//? Tum diziyi itere (dolaşır) eder ve aldigi callback fonksiyonuna gore
 //? test gerceklestirir.Tum elemanlar icin test basarili ise
 //? true aksi takdirde false deger dondurur.
 
 const yasArray = [18, 22, 78, 34, 78, 79, 15];
-const check = yasArray.every((yas) => yas >= 18);
+const check = yasArray.every((yas) => yas >= 18); // every hepsi demek dizideki herkesin yaşı 18den büyükse true döndürür
 check
-  ? console.log("Dizideki herkesin yasi 18'den buyuktur")
+  ? console.log("Dizideki herkesin yasi 18'den buyuktur")// ve 18den büyükse bunu döndür diyoruz true ise yani değilse diğerini
   : console.log("Dizide 18 yas alti var");
 
 //* some()
