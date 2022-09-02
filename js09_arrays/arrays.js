@@ -150,15 +150,17 @@ console.log(sayilar1.includes("5")); //? false
 //*-----------------------------------------------------------
 //* ilk eslesen indeksi dondurur.
 
-console.log(sayilar1.indexOf(2)); //? 2
-console.log(sayilar1.lastIndexOf(2)); //? 5
-console.log(sayilar1.lastIndexOf(4)); //? -1
+console.log(sayilar1.indexOf(2)); //? 2 nin indeksini döndürür
+console.log(sayilar1.lastIndexOf(2)); //? 5 son numarik 2 nin indesk nosu
+console.log(sayilar1.lastIndexOf(4)); //? -1 bulamadığı zaman -1 döndürür
 
 //! Odev: prompt ile konsoldan bir sayi istenmeli (string veya number
 //! olarak) eger bu girilen sayi, dizi icerisinde bulunuyorsa indisi
 //! (string ve number olarak ayri) yazdirilmalidir. Eger bulunamadiysa
 //! Aranilan bulunamamistir yazidirilmalidir.
 //!-----------------------------------------------------------
+
+
 
 //* join()
 //*-----------------------------------------------------------
