@@ -48,10 +48,11 @@ console.log(isimler.at(-1));//son elemanı bu sekilde at ilede alabiliriz  eksi 
 //!  Diziye veri yazma
 // const isimler = ["ahmet", "ismet", "can", "canan", "Matheww"];
 isimler[1] = "saffet";
-console.log(isimler);
+console.log(isimler);//const yeni atamaya izin verdi aslında burada kısmı değişikliğe izin verdi sadece tamamen değiştirmeye izin vermiyor  nonprimitivede böyle bir durum var .
+// burada ismet yerine saffet yazdık
 
 //!Uncaught TypeError: Assignment to constant variable.
-// isimler = ["Ali", "Veli"];
+// isimler = ["Ali", "Veli"];// bu şekilde değişemez consta 
 
 //? numbers dizisinin son elementinin degerini bir arttirin
 console.log(numbers);
