@@ -123,7 +123,7 @@ console.log(sayilar);
 //* sort metodu diziyi iterasyona ugratir ve parametre olark aldigi arrow
 //* fonksiyonunu dizinin her bir elemanina uygular. Bu sayede kucuk sayilar
 //* ile buyuk sayilari yer degistirerek siralama islemini gerceklestirir.
-sayilar.sort((a, b) => a - b);
+sayilar.sort((a, b) => a - b);// tamamına büyük mü küçük mü diye bakıyor ve sıralama yapıyor sort methodu tek tek deniyor arrow fonksiyonla kıyaslama yapıyor 
 console.log(sayilar);
 
 //* fill()
