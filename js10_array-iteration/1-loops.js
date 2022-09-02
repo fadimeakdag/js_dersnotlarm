@@ -13,7 +13,7 @@ const pozitifler = [];
 const dizelereAyir = (n) => {
   for (let i = 0; i < n.length; i++) {
     if (n[i] < 0) {
-      negatifler.push(n[i]);
+      negatifler.push(n[i]);// n in i inci elemanını ekle negatifleri
     } else {
       pozitifler.push(n[i]);
     }
