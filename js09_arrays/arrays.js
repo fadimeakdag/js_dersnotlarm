@@ -143,7 +143,7 @@ const sayilar1 = [3, 5, 2, "2", "uc", 2, "3", "bes", "5"];
 
 //* includes()
 //*-----------------------------------------------------------
-console.log(sayilar1.includes(5)); //? true
+console.log(sayilar1.includes(5)); //? eleman var mı yokmu ona bakar varsa true döndürür yoksa false
 console.log(sayilar1.includes("5")); //? false
 
 //* indexOf(), lastIndexOf();
