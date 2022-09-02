@@ -66,11 +66,11 @@ console.log(kisiler);
 
 //? kisiler icerisindeki yaslar dizisinde bulunan 55 yasini konsola yazdiriniz.
 
-const yas55 = kisiler[5][2];
+const yas55 = kisiler[5][2];//indisleme ile istediğimiz veriye ulaşabiliriz
 console.log(yas55);
 
 //? kisiler icerisindeki yaslar dizisinde bulunan 44 yasini bir eksiltiniz.
-kisiler[5][1]--; //?43
+kisiler[5][1]--; //?43 5. indisin 1 .indisini bir azalttık
 console.log(kisiler);
 console.log(yaslar);
 
