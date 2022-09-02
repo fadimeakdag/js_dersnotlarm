@@ -41,9 +41,9 @@ console.log(diller[1]);
 const go = diller[3];
 console.log(go);
 
-console.log(isimler[isimler.length - 1]);
+console.log(isimler[isimler.length - 1]);//son elemanı alma
 //? at()
-console.log(isimler.at(-1));
+console.log(isimler.at(-1));//son elemanı bu sekilde at ilede alabiliriz  eksi index at da kullanılıyor
 
 //!  Diziye veri yazma
 // const isimler = ["ahmet", "ismet", "can", "canan", "Matheww"];
