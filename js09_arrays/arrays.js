@@ -112,7 +112,7 @@ arabalar.reverse();
 console.log(arabalar);
 
 //* sort() Diziyi alfabetik olarak siralar.
-isimler.sort();
+isimler.sort();//aski kodlarına göre sıralar
 console.log(isimler);
 
 //! Alfabetik siraladigi icin dogru sonuc cikmayabilir.
