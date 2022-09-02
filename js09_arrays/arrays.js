@@ -56,7 +56,7 @@ console.log(isimler);//const yeni atamaya izin verdi aslında burada kısmı de�
 
 //? numbers dizisinin son elementinin degerini bir arttirin
 console.log(numbers);
-numbers[numbers.length - 1]++;
+numbers[numbers.length - 1]++; // son elementi bir arttır demek
 console.log(numbers);
 
 const yaslar = [22, 44, 55];
