@@ -82,7 +82,7 @@ const findStudentsOf = (arr, search) => {
   let counter = 0;
   for (let item of arr) {
     //? Ternary
-    // search === item ? counter++ : null;
+    // search === item ? counter++ : null; //( tek kullanımlık ifadelerde ternary uygun değil yapsakda null yazıyoruz bi şey yapma anlamında)
 
     //! Short-circuit yöntemi: && => kosul dogru (true) ise ifadeyi calisitir.
     search === item && counter++;
