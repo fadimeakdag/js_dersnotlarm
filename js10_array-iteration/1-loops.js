@@ -56,7 +56,7 @@ const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 //   let counter = 0;
 //   for (let i in arr) { 
 //     if (search === arr[i]) { //search dizinin içinde bir yerde varmı diyoruz burada (arr nin i inci elemanındavarmı search)
-//       counter++;
+//       counter++; //(varsa sayaç değişkenini bir arttırıyoruz kaç tane varsa çıksın diye)
 //     }
 //   }
 //   if (!counter) { //counter yoksa anlamında counter===0 anlamında yani conuter yoksa
