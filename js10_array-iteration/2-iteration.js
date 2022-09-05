@@ -42,7 +42,7 @@ console.log(prices);
 //? Bir dizideki tüm isimleri BÜYÜK harfe dönüştüren uygulamayı yazınız.
 let names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayşe", "canan"];
 
-const bigNames = names.map((name) => name.toUpperCase());
+const bigNames = names.map((name) => name.toUpperCase());// names deki her bir name git map ile modifikasyon yap her bir name yi touppercase yap
 console.log(bigNames, names);
 console.log(names.map((name) => name.toUpperCase()));
 
@@ -54,7 +54,7 @@ const euro = 18.23;
 const dolar = 18.19;
 const tlPrices = [100, 150, 100, 50, 80];
 
-const euroPrices = tlPrices.map((tl) => Number(tl / euro).toPrecision(3));
+const euroPrices = tlPrices.map((tl) => Number(tl / euro).toPrecision(3));// toprecision 3 yazarsak 3 basamaklı alır tam kısmı virgül dahil ama type ı str dir bunu number ile numberlaştırıyoruz
 console.log(euroPrices);
 
 const dolarPrices = tlPrices.map((tl) => Number(tl / dolar).toFixed(2));
@@ -83,7 +83,8 @@ const products = [
 // products.map((p, i, arr) => (arr[i] = p.charAt(0).toUpperCase()));
 
 //?For Capitilize
-products.map((p, i, arr) => (arr[i] = p[0].toUpperCase() + p.slice(1)));
+products.map((p, i, arr) => (arr[i] = p[0].toUpperCase() + p.slice(1)));//products dizisini aldık maple içinde dolaşıyoruz p her bir products i indisi arr products un kendisi products dizisindeki  elemana git ve i inci elemanın değerini touppercase yap
+// arr[i] products un her bir elemanı
 console.log(products);
 
 //* ======================================================
@@ -98,10 +99,10 @@ const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
 //?-------------- ÖRNEK -------------------
 //? Maasi 10000'den buyuk olanlari ayri bir diziye saklayalim
 
-const bigThan = salaries.filter((s) => s > 10000);
+const bigThan = salaries.filter((s) => s > 10000);//salaries e git seçme olduğu için fiter ı kullan s i filtrele naıl s>10000 den küçük olanları
 console.log(bigThan, salaries);
 
-const range = salaries.filter((s) => s >= 6000 && s <= 10000);
+const range = salaries.filter((s) => s >= 6000 && s <= 10000);// kosulları and ve or la birleştirebiliriz
 console.log(range);
 
 //?-------------- ÖRNEK -------------------
