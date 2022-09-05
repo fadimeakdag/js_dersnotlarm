@@ -106,19 +106,19 @@ const range = salaries.filter((s) => s >= 6000 && s <= 10000);// kosulları and 
 console.log(range);
 
 //?-------------- ÖRNEK -------------------
-//? Maasi 9000'den az olanlara %10 zam yaparak bu degerleri
+//? Maasi 9000'den az olanlara(seçme fiter) %10 zam (zam map le)yaparak bu degerleri
 //? yeni diziye saklayalim.
 
 const lessThan9000Increase = salaries
   .filter((s) => s < 9000)
-  .map((s) => Math.trunc(s * 1.1));
+  .map((s) => Math.trunc(s * 1.1));//math.trunc tam değer için
 
 console.log(lessThan9000Increase);
 
 salaries
-  .filter((s) => s < 9000)
-  .map((s) => Math.trunc(s * 1.1))
-  .forEach((s) => console.log(s));
+  .filter((s) => s < 9000)//filter  seçti
+  .map((s) => Math.trunc(s * 1.1))// map modifiye etti işlem yaptı yani yüzde 10 zam yaptı
+  .forEach((s) => console.log(s));//foreach yazdırdı herhangi bir değere atama yapmak zorunda kalmadık foreach den dolayı
 //* ======================================================
 //*                 REDUCE METHOD
 //* ======================================================
