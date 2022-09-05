@@ -9,11 +9,11 @@ console.log("****** ITERATION **********");
 //?  Dizideki herbir fiyati konsola bastiriniz.
 
 const prices = [100, 250, 50, 89];
-prices.forEach((p) => console.log(p));
+prices.forEach((p) => console.log(p));//fiyatlar dizisine git foreach ı çağır foreach içine arrow  fonksiyon yazıyoruz arrow okuması şöyle prices de gezin her bir price yi konsola bastır p nin olduğu yere herhangi bir isim yazabilirsin
 
 //? ORNEK: prices dizisindekilerin toplamini konsola yazdiriniz */
 let sum = 0;
-prices.forEach((price) => (sum += price));
+prices.forEach((price) => (sum += price));// prices dizisindeki her bir price yi al ve sum a ekle
 console.log("SUM:", sum);
 
 //! NOT: forEach metodu void metottur.(Herhangi bir deger dondurmez)
@@ -24,7 +24,8 @@ console.log(prices.forEach((price) => (sum += price))); //! undefined
 //? konsola bastiriniz. Ayrica her bir fiyata %10 zam yapiniz.
 
 let total = 0;
-prices.forEach((price, index, arr) => {
+prices.forEach((price, index, arr) => { // ikinci parametre indisi veriyor burada virgülle parametreyi aktif hale getiriyoruz herhangi bir isim olabilir. ara toplamdaki her bir değeri yazdırmamız için ikinci parametreyi yazmak lazım buda indisi demek
+  // birden fazla parametre kullandığımız için arrow fonksiyonda  süslü parantezi açtık
   total += price;
   console.log(`${index + 1}.iteration: ${total}`);
   arr[index] = Math.trunc(price * 1.1);
