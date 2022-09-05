@@ -29,13 +29,14 @@ console.log(dizi);
 //? Dizideki notlarin ortalamasini hesaplayiniz.
 const notlar = [55, 77, 23, 89, 100];
 
-let toplam = 0;
+let toplam = 0; // ortalamayı bulmak için
 
 for (let i = 0; i < notlar.length; i++) {
-  toplam += notlar[i];
+  //indisler 0 dan başladığı için i = 0 diyoruz i yi notlar dizisinin uzunluğu kadar arttır
+  toplam += notlar[i]; // toplam değişkenine atıyoruz sayıları notlaın i inci elemanını
 }
 
-console.log("ORTALAMA:", toplam / notlar.length);
+console.log("ORTALAMA:", toplam / notlar.length);//
 
 //* ======================================================
 //*                   FOR-IN LOOP
@@ -58,7 +59,7 @@ const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 //       counter++;
 //     }
 //   }
-//   if (!counter) {
+//   if (!counter) { //counter yoksa anlamında counter===0 anlamında yani conuter yoksa
 //     return `${search} can not be found`;
 //   } else {
 //     return `${search} found ${counter} times`;
