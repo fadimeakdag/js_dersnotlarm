@@ -54,8 +54,8 @@ const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 
 // const findStudents = (arr, search) => {
 //   let counter = 0;
-//   for (let i in arr) {
-//     if (search === arr[i]) {
+//   for (let i in arr) { 
+//     if (search === arr[i]) { //search dizinin içinde bir yerde varmı diyoruz burada (arr nin i inci elemanındavarmı search)
 //       counter++;
 //     }
 //   }
