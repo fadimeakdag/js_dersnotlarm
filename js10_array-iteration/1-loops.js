@@ -59,12 +59,13 @@ const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 //       counter++; //(varsa sayaç değişkenini bir arttırıyoruz kaç tane varsa çıksın diye)
 //     }
 //   }
-//   if (!counter) { //counter yoksa anlamında counter===0 anlamında yani conuter yoksa
+//   if (!counter) { //counter yoksa anlamında counter===0 anlamında yani conuter yoksa false ise demek//( döngünün dışına çıkıyoruz bulunmustur veya bulunamamıştır demek için ve yine bir koşul var if le koşul açıp counter bakıyoruz counter===0 sa bulunammamıştırtır diyoruz)
 //     return `${search} can not be found`;
 //   } else {
-//     return `${search} found ${counter} times`;
+//     return `${search} found ${counter} times`;//(conter kere bulunmuştur)
 //   }
 // };
+// for döngüsü ile kaç kere bulunduğunu öğreniyoruz for döngüsü dışında karar mekanızmasıyla yani ifle bulunamadıysa bulunamadı bulunduysa bulundu şeklinde bir yapı oluşturuyoruz findstudents i bir şey döndürecek şekilde ayarladık
 
 // const name = prompt("Please enter a name").toLowerCase();
 // console.log(findStudents(students, name));
