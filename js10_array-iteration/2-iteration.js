@@ -29,6 +29,7 @@ prices.forEach((price, index, arr) => { // ikinci parametre indisi veriyor burad
   total += price;//total in ara değeri
   console.log(`${index + 1}.iteration: ${total}`);// 1.iterasyon yazsın diye ${index+1}
   arr[index] = Math.trunc(price * 1.1);// yüzde 10 zam için 3. parametreyi ekliyoruz 3. parametre prices i temsil eder arr nin her bir indisine yani [index] yüzde 10 zam yap yüzde 10 zam demek price*1.1 dmek 
+  // yuvarlama hatalarından kurtulmak için math kütüphanesinden trunc ı çağırıyoruz tam kısmı al demek
 });
 
 console.log(prices);
