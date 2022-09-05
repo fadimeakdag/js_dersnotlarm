@@ -85,11 +85,16 @@ const findStudentsOf = (arr, search) => {
     // search === item ? counter++ : null; //( tek kullanımlık ifadelerde ternary uygun değil yapsakda null yazıyoruz bi şey yapma anlamında)
 
     //! Short-circuit yöntemi: && => kosul dogru (true) ise ifadeyi calisitir.
-    search === item && counter++;
+    search === item && counter++; // for in deki if in tam karşılıgı aslında bu ampersant tek koşullu yerlerde çok kullanılır
 
     //! Short-circuit yöntemi: || => kosul yanlis (false) ise ifadeyi çalıştır.
     search === item || counter++;
   }
+
+  // tek koşullu ifadelerde short-circuit kullan 
+  //iki koşul varsa ternary
+  // üç koşul varsa if yapısı
+  // 5 6 koşulda swace case kullanmak mantıklı
 
   return !counter
     ? `${search} can not be found`
