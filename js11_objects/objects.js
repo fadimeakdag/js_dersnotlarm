@@ -226,5 +226,41 @@ Object.values(people)
   .forEach((p) => console.log(p.dob));
 
 //********************************************************
-//* JSON => Javascript Object Notation
-//********************************************************
+//* JSON => Javascript Object Notation ***************
+
+const team = [
+  {
+    name: "josh",
+    surname: "Adams",
+    job: "developer",
+    age: 30,
+  },
+  { name: "mary", surname: "Bary", job: "tester", age: 22 },
+  { name: "hazel", surname: "Nut", job: "developer", age: 20},
+];//*json
+console.log(team)
+console.log(team[2])//hazel sırasını döndürdü
+
+//*ornek1: team dizisindeki job ları tek tek yazdırınız.
+team.forEach((person)=> console.log(person.job))//foreach her bir objectFit: 
+//*ornek2: age leri bir arttırarak yeni bir diziye saklayın
+
+// map kullanacagız bir modifikasyon var 
+
+const ages = team.map((p) => p.age + 1);// team dizisine git map p ilk elemente gidiyor p ilk objenin tamamını alıyor ve age yi alıyor ve bir arttırıyor ve artışı ages dizisine atıyor ve sırasıyla devam ediyor ve 3 elemanlı bir number dizisi döndürüyor map bir dizi döndürüyor obje değil 
+console.log(ages)
+
+//* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
+//* bunu fullName key'i olarak saklayan, ayni zamanda age degerlerini 5
+//* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
+//yeni dizi için fiter veya map
+
+const teamFullName = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}));
+console.log(teamFullName)
+
+
+
+
