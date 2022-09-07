@@ -255,12 +255,32 @@ console.log(ages)
 //* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
 //yeni dizi için fiter veya map
 
-const teamFullName = team.map((p) => ({
-  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
-  age: p.age + 5,
-}));
+// const teamFullName = team.map((p) => ({
+//   fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//   age: p.age + 5,
+// }));
+//?alternatif
+const teamFullName = team.map((p) => {
+  return {  
+    fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+    age: p.age + 5,
+
+  }
+})
+
 console.log(teamFullName)
 
+
+//*ornek4: yası (age) 22 den küçük esit olan kişilerin adlarını(name) listeleyiniz
+
+team.filter((p) => p.age <= 22).forEach((p) => console.log(p.name));
+
+//*ornek5: 22 yasından kucuk ve esit olanların isimlerini diziye aktarınız
+
+const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name);
+console.log(teamUnder22)
+
+//*ornek6: ortalama yası hesaplayınız
 
 
 
