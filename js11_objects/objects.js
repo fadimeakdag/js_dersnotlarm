@@ -282,5 +282,8 @@ console.log(teamUnder22)
 
 //*ornek6: ortalama yası hesaplayınız
 
+const avgAges = team.reduce((sum,person) => sum += person.age, 0) / team.length
+console.log(avgAges)
+
 
 
