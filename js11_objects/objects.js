@@ -284,6 +284,7 @@ console.log(teamUnder22)
 
 const avgAges = team.reduce((sum,person) => sum += person.age, 0) / team.length
 console.log(avgAges)
-
+// Hocam team.length biraz sorun olmaz mı, diyelim ki bir object’te hiç age hiç yoksa 
+//person içinde herhangi birinde age yoksa person ve age onunune soru isareti koyarsan varmı diye sorar varsa işleme sokar yoksa nan cevirir bir tane bile age yoksa lenght den dolayı
 
 
